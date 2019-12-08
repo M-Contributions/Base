@@ -16,6 +16,7 @@ use Magento\Framework\Exception\CouldNotSaveException;
 use Magento\Framework\Exception\NoSuchEntityException;
 use Magento\Framework\Api\SortOrder;
 use Magento\Framework\Api\SearchResultsInterfaceFactory;
+use Magento\Framework\ObjectManagerInterface; // For the sake of simplicity we're using Magento OM.
 use Exception;
 use Throwable;
 
@@ -25,14 +26,36 @@ use Throwable;
  * The drawbacks of using this abstraction is having three dependencies, defined in this class attributes.
  * It is a must to pass such a dependencies through
  */
-abstract class BaseRepository implements BaseRepositoryInterface
+class BaseRepository implements BaseRepositoryInterface
 {
-    protected $objectFactory; // The current model factory itself
+    protected $object; // The current model class name
 
-    protected $collectionFactory; // The current model collection factory
+    protected $collection; // The current model collection class name
 
     /** @var SearchResultsInterfaceFactory $searchResultsFactory */
     protected $searchResultsFactory;
+
+    /** @var ObjectManagerInterface $objectManager */
+    protected $objectManager;
+
+    /**
+     * BaseRepository constructor.
+     * @param string $object
+     * @param string $collection
+     * @param SearchResultsInterfaceFactory $searchResultsFactory
+     * @param ObjectManagerInterface $objectManager
+     */
+    public function __construct(
+        string $object,
+        string $collection,
+        SearchResultsInterfaceFactory $searchResultsFactory,
+        ObjectManagerInterface $objectManager
+    ) {
+        $this->object = $object;
+        $this->collection = $collection;
+        $this->searchResultsFactory = $searchResultsFactory;
+        $this->objectManager = $objectManager;
+    }
 
     /**
      * @inheritDoc
@@ -52,7 +75,7 @@ abstract class BaseRepository implements BaseRepositoryInterface
      */
     public function getById($id)
     {
-        $object = $this->objectFactory->create();
+        $object = $this->objectManager->get($this->object);
         try {
             $object->load($id);
             if (!$object->getId()) {
@@ -80,7 +103,7 @@ abstract class BaseRepository implements BaseRepositoryInterface
     {
         $searchResults = $this->searchResultsFactory->create();
         $searchResults->setSearchCriteria($criteria);
-        $collection = $this->collectionFactory->create();
+        $collection = $this->objectManager->get($this->collection);
         foreach ($criteria->getFilterGroups() as $filterGroup) {
             $fields = [];
             $conditions = [];
