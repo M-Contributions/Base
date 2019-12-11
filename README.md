@@ -1,7 +1,7 @@
 # This is sort of starting point in the quest of refactoring some Magento 2 repetitive stuff
 
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ticaje/core.svg?style=flat-square)](https://packagist.org/packages/ticaje/core)
-[![Quality Score](https://img.shields.io/scrutinizer/g/ticaje/core.svg?style=flat-square)](https://scrutinizer-ci.com/g/ticaje/core)
+[![Quality Score](https://img.shields.io/scrutinizer/g/M-Contributions/Core.svg?style=flat-square)](https://scrutinizer-ci.com/g/M-Contributions/Core)
 [![Total Downloads](https://img.shields.io/packagist/dt/ticaje/core.svg?style=flat-square)](https://packagist.org/packages/ticaje/core)
 
 ## Preface
