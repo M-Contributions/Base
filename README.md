@@ -4,7 +4,7 @@
 [![Quality Score](https://img.shields.io/scrutinizer/g/ticaje/core.svg?style=flat-square)](https://scrutinizer-ci.com/g/ticaje/core)
 [![Total Downloads](https://img.shields.io/packagist/dt/ticaje/core.svg?style=flat-square)](https://packagist.org/packages/ticaje/core)
 
-##Preface
+## Preface
 
 Magento framework is a great tool for building e-commerce solutions. It did spring out its version 2 some while ago and with it, its quality
 jumped up in a tremendous way. Even so, i wanted to provide certain facilities to developers that make live easier when coding in Magento and
