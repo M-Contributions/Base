@@ -28,6 +28,12 @@
     "sebastian/phpcpd": "~3.0.0",
     "squizlabs/php_codesniffer": "~3.4.0"
   },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "http://repo.magento.com/"
+    }
+  ],
   "version": "1.0.2",
   "autoload": {
     "files": [
