@@ -1,5 +1,5 @@
 {
-  "name": "ticaje/core",
+  "name": "ticaje/base",
   "authors": [
     {
       "name": "Hector Luis Barrientos",
@@ -40,7 +40,7 @@
       "registration.php"
     ],
     "psr-4": {
-      "Ticaje\\Core\\": ""
+      "Ticaje\\Base\\": ""
     }
   }
 }

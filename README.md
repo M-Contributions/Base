@@ -19,7 +19,7 @@ architecture of the framework. In short, S.O.L.I.D principles and good design pr
 You can install this package using composer(the only way i recommend)
 
 ```bash
-composer require ticaje/core
+composer require ticaje/base
 ```
 
 ## Features

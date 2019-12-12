@@ -4,11 +4,11 @@ declare(strict_types=1);
 /**
  * Base Repository Interface
  * @category    Ticaje
- * @package     Ticaje_Core
+ * @package     Ticaje_Base
  * @author      Hector Luis Barrientos <ticaje@filetea.me>
  */
 
-namespace Ticaje\Core\Repository\Base;
+namespace Ticaje\Base\Repository\Base;
 
 use Magento\Framework\Api\SearchCriteriaInterface;
 use Magento\Framework\Api\SearchResultsInterface;
@@ -17,7 +17,7 @@ use Magento\Framework\Exception\NoSuchEntityException;
 
 /**
  * Interface BaseRepositoryInterface
- * @package Ticaje\Core\Repository\Base
+ * @package Ticaje\Base\Repository\Base
  */
 interface BaseRepositoryInterface
 {
