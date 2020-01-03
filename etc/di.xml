@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+
+    <!-- Application Services Preferences -->
+
+    <!-- No chances to use another Manager since it's an infrastructure related module hence the preference -->
+    <preference for="Ticaje\Base\Application\Service\ServiceLocatorInterface" type="Ticaje\Base\Application\Service\ServiceLocator"/>
+
+    <!-- Application Services Preferences -->
+
+    <type name="Ticaje\Base\Application\Service\ServiceLocator">
+        <arguments>
+            <argument name="objectManager" xsi:type="object">Magento\Framework\ObjectManager\ObjectManager</argument>
+        </arguments>
+    </type>
+
+</config>
