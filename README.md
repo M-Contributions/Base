@@ -16,6 +16,7 @@ architecture of the framework. In short, S.O.L.I.D principles and good design pr
 
 ## Installation
 
+
 You can install this package using composer(the only way i recommend)
 
 ```bash
@@ -42,4 +43,4 @@ Please see [CONTRIBUTING](CONTRIBUTING.md) for details.
 
 ## License
 
-The MIT License (MIT). Please see [License File](LICENSE.md) for more information.
+The GNU General Public License (GPLv3). Please see [License File](LICENSE.md) for more information.
