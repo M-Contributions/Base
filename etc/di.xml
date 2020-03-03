@@ -7,11 +7,4 @@
     <preference for="Ticaje\Base\Application\Service\ServiceLocatorInterface" type="Ticaje\Base\Application\Service\ServiceLocator"/>
 
     <!-- Application Services Preferences -->
-
-    <type name="Ticaje\Base\Application\Service\ServiceLocator">
-        <arguments>
-            <argument name="objectManager" xsi:type="object">Magento\Framework\ObjectManager\ObjectManager</argument>
-        </arguments>
-    </type>
-
 </config>
