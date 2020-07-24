@@ -103,7 +103,7 @@ class BaseRepository implements BaseRepositoryInterface
     {
         $searchResults = $this->searchResultsFactory->create();
         $searchResults->setSearchCriteria($criteria);
-        $collection = $this->objectManager->get($this->collection);
+        $collection = $this->objectManager->create($this->collection);
         foreach ($criteria->getFilterGroups() as $filterGroup) {
             $fields = [];
             $conditions = [];
