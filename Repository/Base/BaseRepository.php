@@ -75,7 +75,7 @@ class BaseRepository implements BaseRepositoryInterface
      */
     public function getById($id)
     {
-        $object = $this->objectManager->get($this->object);
+        $object = $this->objectManager->create($this->object);
         try {
             $object->load($id);
             if (!$object->getId()) {
