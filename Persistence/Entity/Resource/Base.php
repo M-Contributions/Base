@@ -7,14 +7,14 @@ declare(strict_types=1);
  * @author Hector Luis Barrientos <ticaje@filetea.me>
  */
 
-namespace Ticaje\Base\Resource\Persistence\Entity\Resource;
+namespace Ticaje\Base\Persistence\Entity\Resource;
 
 use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
 use Magento\Framework\Model\ResourceModel\Db\Context as ParentContext;
 
 /**
  * Class Base
- * @package Ticaje\Base\Resource\Persistence\Entity\Resource
+ * @package Ticaje\Base\Persistence\Entity\Resource
  */
 class Base extends AbstractDb
 {
