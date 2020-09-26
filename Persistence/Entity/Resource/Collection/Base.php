@@ -51,4 +51,9 @@ class Base extends AbstractCollection
         $this->_resourceModel = $resourceModel;
         parent::__construct($entityFactory, $logger, $fetchStrategy, $eventManager, $connection, $resource);
     }
+
+    protected function _construct()
+    {
+        $this->_init($this->_model, $this->_resourceModel);
+    }
 }
