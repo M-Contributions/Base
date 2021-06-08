@@ -1,6 +1,5 @@
 <?php
 declare(strict_types=1);
-
 /**
  * Service Locator Class
  * @category    Ticaje
@@ -11,6 +10,7 @@ declare(strict_types=1);
 namespace Ticaje\Base\Application\Service;
 
 use Magento\Framework\ObjectManagerInterface as MagentoObjectManagerInterface;
+use Ticaje\Contract\Application\Service\ServiceLocatorInterface;
 
 /**
  * Class ServiceLocator
@@ -21,10 +21,11 @@ use Magento\Framework\ObjectManagerInterface as MagentoObjectManagerInterface;
  */
 class ServiceLocator implements ServiceLocatorInterface
 {
-    protected $objectManager;
+    private $objectManager;
 
     /**
      * ServiceLocator constructor.
+     *
      * @param MagentoObjectManagerInterface $objectManager
      * Using composition over inheritance of course
      */
@@ -35,14 +36,16 @@ class ServiceLocator implements ServiceLocatorInterface
     }
 
     /**
-     * @param $class
-     * @return mixed
+     * @inheritDoc
      */
     public function get($class)
     {
         return $this->objectManager->get($class);
     }
 
+    /**
+     * @inheritDoc
+     */
     public function create($class, array $arguments = [])
     {
         return $this->objectManager->create($class, $arguments);

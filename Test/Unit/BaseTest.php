@@ -15,7 +15,7 @@ use Magento\Framework\TestFramework\Unit\Helper\ObjectManager;
 
 /**
  * Class BaseTest
- * @package Ticaje\Corre\Test\Unit
+ * @package Ticaje\Base\Test\Unit
  */
 abstract class BaseTest extends TestCase
 {

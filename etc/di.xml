@@ -4,7 +4,7 @@
     <!-- Application Services Preferences -->
 
     <!-- No chances to use another Manager since it's an infrastructure related module hence the preference -->
-    <preference for="Ticaje\Base\Application\Service\ServiceLocatorInterface" type="Ticaje\Base\Application\Service\ServiceLocator"/>
+    <preference for="Ticaje\Contract\Application\Service\ServiceLocatorInterface" type="Ticaje\Base\Application\Service\ServiceLocator"/>
 
     <!-- Application Services Preferences -->
 </config>
