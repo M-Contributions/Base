@@ -1,8 +1,10 @@
 # This is sort of starting point in the quest of refactoring some Magento 2 repetitive stuff
 
+[![GPLv3 License](https://img.shields.io/badge/license-GPLv3-marble.svg)](https://www.gnu.org/licenses/gpl-3.0.en.html)
 [![Latest Version on Packagist](https://img.shields.io/packagist/v/ticaje/base.svg?style=flat-square)](https://packagist.org/packages/ticaje/base)
 [![Quality Score](https://img.shields.io/scrutinizer/g/M-Contributions/Core.svg?style=flat-square)](https://scrutinizer-ci.com/g/M-Contributions/Core)
 [![Total Downloads](https://img.shields.io/packagist/dt/ticaje/base.svg?style=flat-square)](https://packagist.org/packages/ticaje/base)
+[![Blog](https://img.shields.io/badge/Blog-hectorbarrientos.com-magenta)](https://hectorbarrientos.com)
 
 ## Preface
 
