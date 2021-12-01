@@ -10,7 +10,7 @@ declare(strict_types=1);
 
 namespace Ticaje\Base\Application\Factory;
 
-use Ticaje\Base\Application\Service\ServiceLocatorInterface;
+use Ticaje\Contract\Application\Service\ServiceLocatorInterface;
 
 /**
  * Class Base
