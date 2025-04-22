@@ -13,9 +13,9 @@
   "description": "This is sort of starting point in the quest of refactoring some Magento 2 repetitive stuff",
   "type": "magento2-module",
   "require": {
-    "php": "^7.0",
+    "php": "^7.0 | ^8.0",
     "magento/product-community-edition": "*",
-    "ticaje/design-by-contract": "^1.0"
+    "ticaje/design-by-contract": "^2.0"
   },
   "require-dev": {
     "allure-framework/allure-phpunit": "~1.2.0",
